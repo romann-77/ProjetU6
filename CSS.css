@@ -1,38 +1,49 @@
+/* Définition des couleurs de fond avec un dégradé */
 body {
+    background: linear-gradient(45deg, #40e0d0, #ff66b2); /* Dégradé de bleu turquoise à rose */
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    color: white;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
+/* Style du titre */
 h2 {
-    color: #333;
-}
-
-table {
-    width: 50%;
-    height: 300px;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-td {
     text-align: center;
-    border: 1px solid #ddd;
-    padding: 20px;
+    padding-top: 50px;
+    font-size: 2em;
+    color: #ffffff;
 }
 
+/* Style de la table */
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style des cellules */
+td {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Liens */
 a {
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #007bff;
-    transition: color 0.3s ease;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #40e0d0, #ff66b2); /* Dégradé pour les liens */
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Effet au survol des liens */
 a:hover {
-    color: #0056b3;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
 }
